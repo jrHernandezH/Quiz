@@ -1,0 +1,46 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.container {
+  margin-top: 10px;
+}
+
+h1 {
+  color: #343a40;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mensaje {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+}
+
+.mensaje h3 {
+  font-weight: bold;
+}
+
+.mensaje p {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.especialista {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.mostrar{
+  font-weight: bold;
+  color: #155724;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 20px;
+  background-color: #d4edda;
+  padding: 10px;
+  border-radius: 5px;
+}

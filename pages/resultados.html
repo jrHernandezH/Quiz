@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enfermedades Mentales</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/resultados.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Resultados del Quiz</h1>
+
+    <div class="mensaje">
+      <h3>Mensaje para el Usuario</h3>
+      <p>Según tus respuestas, podrías estar experimentando las siguientes enfermedades mentales:</p>
+      <ul id="listaResultados">
+        <li id="psicosis" style="display: none;">Psicosis</li>
+        <li id="maniacoDepresivo" style="display: none;">Maníaco Depresivo</li>
+        <li id="depresionReactivaEndogena" style="display: none;">Depresión Reactiva y Endógena</li>
+        <li id="suicidio" style="display: none;">Suicidio</li>
+        <li id="neurosis" style="display: none;">Neurosis</li>
+        <li id="ansiedad" style="display: none;">Ansiedad</li>
+        <li id="compulsiva" style="display: none;">Compulsiva</li>
+        <li id="histerica" style="display: none;">Histérica</li>
+        <li id="paranoia" style="display: none;">Paranoia</li>
+        <li id="esquizofrenia" style="display: none;">Esquizofrenia</li>
+      </ul>
+      <p id="mensajeNormal" style="display:none;">¡Buenas noticias! No pareces tener ninguna enfermedad mental. Si tienes preocupaciones o síntomas persistentes, te recomendamos que consultes con un especialista para una evaluación más detallada.</p>
+      <p>Para obtener más información y un diagnóstico preciso, te recomendamos que consultes con un especialista.</p>
+      <p class="especialista">¡No dudes en buscar ayuda!</p>
+      <button class="btn btn-primary" onclick="window.location.href = '../index.html'; localStorage.clear();">Regresar al Inicio</button>
+    </div>
+  </div>
+      <script src="../js/resultados.js"></script>
+</body>
+</html>
