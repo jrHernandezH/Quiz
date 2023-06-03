@@ -1,6 +1,4 @@
-let respuestas = {};
-window.onload = () => {
-}
+
 function guardarRespuesta(respuesta) {
     localStorage.setItem("pregunta1", respuesta);
     window.location.href = "pregunta2.html";
