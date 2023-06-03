@@ -22,7 +22,7 @@ const evaluar = () => {
         respuestaPregunta7 == null ||
         respuestaPregunta8 == null
     ) {
-        window.location.href = '../index.html';
+        window.location.href = 'index.html';
     }
 
     // Mostrar las enfermedades correspondientes según las respuestas
