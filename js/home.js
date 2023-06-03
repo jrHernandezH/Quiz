@@ -1,3 +1,3 @@
 function iniciarQuiz() {
-    window.location.href = "../pages/pregunta1.html";
+    window.location.href = "Quiz/pages/pregunta1.html";
 }
