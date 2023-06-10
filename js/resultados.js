@@ -44,7 +44,8 @@ const evaluar = () => {
         document.getElementById("trastornoAnsiedadGeneralizada").style.display = "block";
         conteo++;
     }
-    if (respuestaPregunta5 === "No" && respuestaPregunta6 === "Si") {
+    if (respuestaPregunta6 === "Si") {
+        document.getElementById("trastornoDepresivoMayor").style.display = "none";
         document.getElementById("trastornoEstresPostraumatico").style.display = "block";
         conteo++;
     }
