@@ -1,17 +1,108 @@
 body {
+  background-color: #f8f9fa;
+  overflow-y: hidden;
+}
+#page-container {
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.fade-in {
+  opacity: 1;
+}
+#progress-bar {
+  width: 0%;
+  height: 10px;
+  background-color: #4CAF50;
+}
+.container {
+  margin-top: 20px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  width: 350px;
+  height: fit-content;
+}
+.card-header{
+  height:max-content;
+  overflow: hidden;
+}
+p{
+  margin-top: -20px;
+}
+.card-header, .card-header>h1, p{
+  color: #ECECEC;
+  padding: 10px;
+  background-color: #9356EA;
+}
+.card-body{
+  height: fit-content;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.card-body::-webkit-scrollbar {
+  width: 0;
+}
+.form-check{
+  margin: 10px 0;
+}
+.form-check:first-child{
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+h1 {
+  color: #343a40;
+  font-weight: bold;
+}
+.buttons{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.btn{
+  margin-right: 5px;
+  background-color: #701ea7;
+  border: navy;
+}
+/*Celular*/
+@media (max-width: 768px) {
+  body {
     background-color: #f8f9fa;
+    overflow-y:scroll;
   }
-
-  .container {
-    margin-top: 100px;
+  .card{
+    margin-top: -140px;
+    width: 550px;
+    height: fit-content;
   }
-
-  h1 {
-    color: #343a40;
-    font-weight: bold;
+  .card{
+    width: 100%;
+    border-radius: 10px;
   }
-  #progress-bar {
-    width: 0%;
-    height: 10px;
-    background-color: #4CAF50;
+  .card-header{
+    height: fit-content;
+    overflow: hidden;
+  }
+  .card-header, h1, p{
+    padding: 10px;
+    color: #ECECEC;
+  }
+  .card-header h1{
+    font-size: 26px;
+  }
+  .card-header p{
+    font-size: 1.2rem;
+  }
+  .btn{
+    background-color: #701ea7;
+    border: navy;
+    padding: 10px 20px;
+  }
   }

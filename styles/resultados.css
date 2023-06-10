@@ -45,8 +45,40 @@ h1 {
   border-radius: 5px;
 }
 .trastorno {
+  width: 420px;
   display: none;
 }
 .mostrar {
   display: block;
+}
+.respuestasT{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: start;
+}
+.card-header{
+  color: #ECECEC;
+  padding: 10px;
+  background-color: #9356EA;
+}
+.btn-primary {
+  background-color: #701ea7;
+  border-color: #701ea7;
+}
+@media (max-width: 768px) {
+  body {
+    background-color: #f8f9fa;
+    overflow-y:scroll;
+  }
+  .respuestasT{
+    display: block;
+
+  }
+  .trastorno {
+    width: fit-content;
+    display: none;
+    margin-bottom: 10px;
+  }
+  
 }

@@ -49,12 +49,10 @@ const evaluar = () => {
         document.getElementById("trastornoEstresPostraumatico").style.display = "block";
         conteo++;
     }
-    if (conteo >= 8) {
-        window.location.href = "moreInformation.html";
-    }
     if (conteo <= 0) {
-        document.getElementById("mensajeNormal").style.display = "block";
         document.getElementById("mensajeNormal").classList.add("mostrar");
+        document.getElementById("mensajeNormal").style.display = "block";
+        document.getElementById("respuestaTra").style.display = "none";
     } else {
         document.getElementById("listaResultados").classList.add("mostrar");
     }

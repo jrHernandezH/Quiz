@@ -11,35 +11,55 @@
 <body>
   <div class="container">
     <h1>Resultados del Quiz</h1>
-
     <div class="mensaje">
       <h3>Usuario:</h3>
       <p>Según tus respuestas, podrías estar experimentando las siguientes enfermedades mentales:</p>
-      <div id="trastornoDepresivoMayor" class="trastorno">
-        <h2>Trastorno Depresivo Mayor</h2>
-        <p>Este trastorno se caracteriza por una tristeza profunda y persistente, pérdida de interés en actividades antes disfrutadas, cambios en el apetito y el sueño, fatiga, sentimientos de culpa o inutilidad, dificultad para concentrarse y pensamientos recurrentes sobre la muerte o el suicidio.</p>
+      <div class="respuestasT" id="respuestaTra">
+        <div id="trastornoDepresivoMayor" class="trastorno card">
+          <div class="card-header">
+            <h2>Trastorno Depresivo Mayor</h2>
+          </div>
+          <div class="card-body">
+            <p>Este trastorno se caracteriza por una tristeza profunda y persistente, pérdida de interés en actividades antes disfrutadas, cambios en el apetito y el sueño, fatiga, sentimientos de culpa o inutilidad, dificultad para concentrarse y pensamientos recurrentes sobre la muerte o el suicidio.</p>
+          </div>
+        </div>
+        <div id="trastornoBipolar" class="trastorno card">
+          <div class="card-header">
+            <h2>Trastorno Bipolar</h2>
+          </div>
+          <div class="card-body">
+            <p>Se caracteriza por cambios extremos de ánimo, desde períodos de euforia excesiva y alta energía (llamados episodios maníacos) hasta períodos de profunda tristeza y desesperación (llamados episodios depresivos). Estos cambios de humor pueden afectar la capacidad de funcionar en la vida diaria.</p>
+          </div>
+        </div>
+        
+        <div id="trastornoAnsiedad" class="trastorno card">
+          <div class="card-header">
+            <h2>Trastorno de Ansiedad</h2>
+          </div>
+          <div class="card-body">
+            <p>Es un trastorno en el que una persona experimenta ansiedad intensa y persistente, a menudo sin un motivo claro. Los síntomas pueden incluir preocupación excesiva, irritabilidad, dificultad para concentrarse, tensión muscular y problemas de sueño</p>
+          </div>
+        </div>
+        
+        <div id="trastornoAnsiedadGeneralizada" class="trastorno card">
+          <div class="card-header">
+            <h2>Trastorno de Ansiedad Generalizada (TAG)</h2>
+          </div>
+          <div class="card-body">
+            <p>Es un trastorno de ansiedad crónico en el que una persona experimenta preocupación y ansiedad excesiva sobre varios aspectos de su vida, como el trabajo, las relaciones o la salud. Los síntomas pueden incluir inquietud, fatiga, dificultad para concentrarse, irritabilidad y problemas de sueño.</p>
+          </div>
+        </div>
+        
+        <div id="trastornoEstresPostraumatico" class="trastorno card">
+          <div class="card-header">
+            <h2>Trastorno de Estrés Postraumático (TEPT)</h2>
+          </div>
+          <div class="card-body">
+            <p> Ocurre después de haber experimentado o presenciado un evento traumático, como un accidente grave, un desastre natural o una situación de violencia. Los síntomas pueden incluir recuerdos recurrentes y angustiantes del evento, pesadillas, evitación de situaciones relacionadas, hipervigilancia y cambios en el estado de ánimo.</p>
+          </div>
+        </div>
       </div>
-      
-      <div id="trastornoBipolar" class="trastorno">
-        <h2>Trastorno Bipolar</h2>
-        <p>Se caracteriza por cambios extremos de ánimo, desde períodos de euforia excesiva y alta energía (llamados episodios maníacos) hasta períodos de profunda tristeza y desesperación (llamados episodios depresivos). Estos cambios de humor pueden afectar la capacidad de funcionar en la vida diaria.</p>
-      </div>
-      
-      <div id="trastornoAnsiedad" class="trastorno">
-        <h2>Trastorno de Ansiedad</h2>
-        <p>Es un trastorno en el que una persona experimenta ansiedad intensa y persistente, a menudo sin un motivo claro. Los síntomas pueden incluir preocupación excesiva, irritabilidad, dificultad para concentrarse, tensión muscular y problemas de sueño</p>
-      </div>
-      
-      <div id="trastornoAnsiedadGeneralizada" class="trastorno">
-        <h2>Trastorno de Ansiedad Generalizada (TAG)</h2>
-        <p>Es un trastorno de ansiedad crónico en el que una persona experimenta preocupación y ansiedad excesiva sobre varios aspectos de su vida, como el trabajo, las relaciones o la salud. Los síntomas pueden incluir inquietud, fatiga, dificultad para concentrarse, irritabilidad y problemas de sueño.</p>
-      </div>
-      
-      <div id="trastornoEstresPostraumatico" class="trastorno">
-        <h2>Trastorno de Estrés Postraumático (TEPT)</h2>
-        <p> Ocurre después de haber experimentado o presenciado un evento traumático, como un accidente grave, un desastre natural o una situación de violencia. Los síntomas pueden incluir recuerdos recurrentes y angustiantes del evento, pesadillas, evitación de situaciones relacionadas, hipervigilancia y cambios en el estado de ánimo.</p>
-      </div>
-      
+    
       <p id="mensajeNormal" style="display:none;">¡Buenas noticias! No pareces tener ninguna enfermedad mental. Si tienes preocupaciones o síntomas persistentes, te recomendamos que consultes con un especialista para una evaluación más detallada.</p>
       <p>Para obtener más información y un diagnóstico preciso, te recomendamos que consultes con un especialista.</p>
       <p class="especialista">¡No dudes en buscar ayuda!</p>
