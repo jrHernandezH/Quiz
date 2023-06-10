@@ -1,7 +1,9 @@
-let conteo = 0
+let conteo = 0;
+
 window.onload = () => {
-    evaluar()
-}
+    evaluar();
+};
+
 const evaluar = () => {
     let respuestaPregunta1 = localStorage.getItem("pregunta1");
     let respuestaPregunta2 = localStorage.getItem("pregunta2");
@@ -25,42 +27,30 @@ const evaluar = () => {
         window.location.href = 'index.html';
     }
 
-    // Mostrar las enfermedades correspondientes según las respuestas
-    if (respuestaPregunta3 === "Si" && respuestaPregunta8 === "Si") {
-        document.getElementById("psicosis").style.display = "block";
-        conteo++;
-    }
+    // Mostrar hasta dos trastornos correspondientes según las respuestas
     if (respuestaPregunta1 === "Si" && respuestaPregunta2 === "Si") {
-        document.getElementById("maniacoDepresivo").style.display = "block";
+        document.getElementById("trastornoDepresivoMayor").style.display = "block";
         conteo++;
     }
-    if (respuestaPregunta7 === "Si") {
-        document.getElementById("depresionReactivaEndogena").style.display = "block";
-        conteo++;
-    }
-    if (respuestaPregunta4 === "Si") {
-        document.getElementById("suicidio").style.display = "block";
+    if (respuestaPregunta1 === "Si" && respuestaPregunta2 === "No") {
+        document.getElementById("trastornoBipolar").style.display = "block";
         conteo++;
     }
     if (respuestaPregunta5 === "Si") {
-        document.getElementById("neurosis").style.display = "block";
-        document.getElementById("ansiedad").style.display = "block";
+        document.getElementById("trastornoAnsiedad").style.display = "block";
         conteo++;
     }
-    if (respuestaPregunta3 === "Si") {
-        document.getElementById("compulsiva").style.display = "block";
-        document.getElementById("histerica").style.display = "block";
+    if (respuestaPregunta5 === "No" && respuestaPregunta7 === "Si") {
+        document.getElementById("trastornoAnsiedadGeneralizada").style.display = "block";
         conteo++;
     }
-    if (respuestaPregunta8 === "Si") {
-        document.getElementById("paranoia").style.display = "block";
+    if (respuestaPregunta5 === "No" && respuestaPregunta6 === "Si") {
+        document.getElementById("trastornoEstresPostraumatico").style.display = "block";
         conteo++;
     }
-    if (respuestaPregunta6 === "Si") {
-        document.getElementById("esquizofrenia").style.display = "block";
-        conteo++;
+    if (conteo >= 8) {
+        window.location.href = "moreInformation.html";
     }
-
     if (conteo <= 0) {
         document.getElementById("mensajeNormal").style.display = "block";
         document.getElementById("mensajeNormal").classList.add("mostrar");
@@ -68,5 +58,5 @@ const evaluar = () => {
         document.getElementById("listaResultados").classList.add("mostrar");
     }
     // Limpiar el localStorage después de mostrar los resultados
-
-}
+    localStorage.clear();
+};

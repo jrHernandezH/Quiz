@@ -44,3 +44,9 @@ h1 {
   padding: 10px;
   border-radius: 5px;
 }
+.trastorno {
+  display: none;
+}
+.mostrar {
+  display: block;
+}
