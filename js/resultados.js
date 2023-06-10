@@ -56,6 +56,4 @@ const evaluar = () => {
     } else {
         document.getElementById("listaResultados").classList.add("mostrar");
     }
-    // Limpiar el localStorage después de mostrar los resultados
-    localStorage.clear();
 };
